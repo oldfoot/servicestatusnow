@@ -1,0 +1,273 @@
+body {
+	margin: 0; padding: 0;
+	font: 10px normal Arial, Helvetica, sans-serif;	
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	position: center;
+}
+#headlogo {
+	padding: 5px 0 7px 0;
+	font-size:25px;
+	background-color:white;
+	color:black;	
+	padding-top: 45px;
+}
+
+#disclaimer {
+	color: #999;
+	padding: 100px 0 7px 0;
+	text-align: right;	
+	top: 0; right: 0;
+	font-size:18px;
+}
+#header .disclaimer a {	color: #ccc;}
+ul.topnav {
+	list-style: none;
+	padding: 0 20px;	
+	margin: 0;
+	float: left;
+	width: 920px;
+	background: #222;
+	font-size: 1.2em;
+	background: url(../images/topnav_bg.gif) repeat-x;
+}
+ul.topnav li {
+	float: left;
+	margin: 0;	
+	padding: 0 15px 0 0;
+	position: relative; /*--Declare X and Y axis base--*/
+}
+ul.topnav li a{
+	padding: 10px 5px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	float: left;
+}
+ul.topnav li a:hover{
+	background: url(../images/topnav_hover.gif) no-repeat center top;
+}
+ul.topnav li span { /*--Drop down trigger styles--*/
+	width: 17px;
+	height: 35px;
+	float: left;
+	background: url(../images/subnav_btn.gif) no-repeat center top;
+}
+ul.topnav li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+ul.topnav li ul.subnav {
+	list-style: none;
+	position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+	left: 0; top: 35px;
+	background: #333;
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	width: 170px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border: 1px solid #111;
+}
+ul.topnav li ul.subnav li{
+	margin: 0; padding: 0;
+	border-top: 1px solid #252525; /*--Create bevel effect--*/
+	border-bottom: 1px solid #444; /*--Create bevel effect--*/
+	clear: both;
+	width: 170px;
+}
+html ul.topnav li ul.subnav li a {
+	float: left;
+	width: 145px;
+	background: #333 url(../images/dropdown_linkbg.gif) no-repeat 10px center;
+	padding-left: 20px;
+}
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+	background: #222 url(../images/dropdown_linkbg.gif) no-repeat 10px center; 
+}
+#header img {
+	margin: 20px 0 10px;
+}
+.textfield_effect {
+/*we will first set the border styles.*/
+border-width: 1px;
+border-style: solid;
+border-color: #999999;
+/*we are now going to add in the shadow image that we created earlier*/
+background-image: url(back_field.gif);
+background-repeat: repeat-x;
+/*I am going to add some text formatting of my own*/
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #333333;
+width: 200px;
+height: 15px;
+}
+/*we are now going to style how the textfield will look when we
+hover over it and when we actually have it selected*/
+.textfield_effect:hover {
+border-color: #64acd8;
+border-width: 1px;
+}
+.textfield_effect:focus {
+border-color: #64acd8;
+border-width: 1px;
+}
+/*you may also like to add some styles for the rest of the form*/
+fieldset {
+width: 400px;
+height: auto;
+border-style: solid;
+border-width: 1px;
+border-color: #036399;
+margin-left: auto;
+margin-right: auto;
+background-color: #F5F5F5;
+}
+fieldset:hover {
+border-color: #0ca0ff;
+}
+legend {
+font-family: sans-serif;
+font-size: 18px;
+color: #000000;
+font-weight: bold;
+}
+.message{
+		background-size: 40px 40px;
+		background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);										
+		 box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+		 width: 100%;
+		 border: 1px solid;
+		 color: #fff;
+		 padding: 15px;
+		 position: fixed;
+		 _position: absolute;
+		 text-shadow: 0 1px 0 rgba(0,0,0,.5);
+		 animation: animate-bg 5s linear infinite;
+}
+
+.info{
+		 background-color: #4ea5cd;
+		 border-color: #3b8eb5;
+}
+
+.error{
+		 background-color: #de4343;
+		 border-color: #c43d3d;
+}
+		 
+.warning{
+		 background-color: #eaaf51;
+		 border-color: #d99a36;
+}
+
+.success{
+		 background-color: #61b832;
+		 border-color: #55a12c;
+}
+
+.message h3{
+		 margin: 0 0 5px 0;													 
+}
+
+.message p{
+		 margin: 0;													 
+}
+
+@keyframes animate-bg {
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: -80px 0;
+    }
+}
+// my 3 panel part of the page
+#topsection{
+background: #EAEAEA;
+height: 90px; /*Height of top section*/
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 15px;
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+margin: 0 200px 0 25%; /*Margins for content column. Should be "0 right-column-width 0 left-column-width*/
+}
+
+#leftcolumn{
+float: left;
+width: 25%; /*Width of left column in percentage*/
+margin-left: -100%;
+background: #FFFFFF;
+}
+
+#rightcolumn{
+float: left;
+width: 250px; /*Width of right column in pixels*/
+margin-left: -250px; /*Set margin to -(RightColumnWidth)*/
+background: #FFFFFF;
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: black;
+color: #FFF;
+text-align: center;
+padding: 4px 0;
+}
+
+#footer a{
+color: #FFFF80;
+}
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}
+.info1, .success1, .warning1, .error1 {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
+font: 12px normal Arial, Helvetica, sans-serif;	
+}
+.info1 {
+color: #00529B;
+background-color: #BDE5F8;
+background-image: url('../images/info.png');
+}
+.success1 {
+color: #4F8A10;
+background-color: #DFF2BF;
+background-image:url('../images/success.png');
+}
+.warning1 {
+color: #9F6000;
+background-color: #FEEFB3;
+background-image: url('../images/warning.png');
+}
+.error1 {
+color: #D8000C;
+background-color: #FFBABA;
+background-image: url('../images/error.png');
+}
+.ball {
+	height:22px;
+	width:22px;
+	background-image: url('../images/services.png');
+}

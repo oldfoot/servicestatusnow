@@ -1,0 +1,40 @@
+<?php
+class dashboard {
+
+	public function __construct() {
+		$this->html = "";
+	}	
+	
+	public function HTML() {
+		
+		$apps = array("Helpdesk","Assets","RunningSheet","ProblemStream");
+
+		
+		
+		$this->html .= "
+			<section id='content'>
+				<div class='wrapper'>
+					<div class='pad'>
+						<div class='wrapper'>
+						<article class='col1'><h2>Select An Application:</h2></article>
+						</div>
+					</div>
+					";
+				foreach ($apps as $app) {
+					$icon = strtolower($app);
+					$this->html .= "<div style='float:left;padding:20px 20px 20px 20px;text-align:center' id='appicon' class='rounded-corners'>\n";
+						$this->html .= "<a href='$icon.php'>\n";
+						$this->html .= "<img src='images/apps/$icon.png' border='0'>\n";
+						$this->html .= "<br />\n";
+						$this->html .= "$app";
+						$this->html .= "</a>\n";
+					$this->html .= "</div>\n";
+				}	
+		$this->html .= "
+				</div>
+			</section>
+			";
+		return $this->html;
+	}	
+}
+?>

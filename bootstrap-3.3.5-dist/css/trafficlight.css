@@ -1,0 +1,16 @@
+
+
+#light span {
+    border-radius: 120px;
+    display: block;
+    height: 100px;
+    margin: 4px auto 0;
+    opacity: .5;
+    width: 100px;
+}
+
+/*! Light colours */
+#green  { background-color: darkgreen; }
+
+/*! Active states */
+#light #green.active  { box-shadow: 0 0 100px darkgreen; }

@@ -1,0 +1,9 @@
+CREATE TABLE `mq_detail` (
+  `DetailID` int(5) NOT NULL AUTO_INCREMENT,
+  `MQID` int(5) DEFAULT NULL,
+  `Name` varchar(255) DEFAULT NULL,
+  `Value` text,
+  PRIMARY KEY (`DetailID`),
+  KEY `FK_mq_detail` (`MQID`),
+  CONSTRAINT `FK_mq_detail` FOREIGN KEY (`MQID`) REFERENCES `mq_master` (`MQID`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=357 DEFAULT CHARSET=utf8

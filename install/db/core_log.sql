@@ -1,0 +1,7 @@
+CREATE TABLE `core_log` (
+  `ID` int(5) NOT NULL AUTO_INCREMENT,
+  `SCRIPT_NAME` varchar(255) DEFAULT NULL,
+  `DateTimeLogged` datetime DEFAULT NULL,
+  `SessionID` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5692 DEFAULT CHARSET=latin1

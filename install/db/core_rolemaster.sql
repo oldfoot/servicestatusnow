@@ -1,0 +1,5 @@
+CREATE TABLE `core_rolemaster` (
+  `RoleID` int(5) NOT NULL AUTO_INCREMENT,
+  `RoleName` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`RoleID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1

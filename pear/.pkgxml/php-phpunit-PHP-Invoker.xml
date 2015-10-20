@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0                       http://pear.php.net/dtd/tasks-1.0.xsd                       http://pear.php.net/dtd/package-2.0                       http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PHP_Invoker</name>
+ <channel>pear.phpunit.de</channel>
+ <summary>Utility class for invoking callables with a timeout.</summary>
+ <description>Utility class for invoking callables with a timeout.</description>
+ <lead>
+  <name>Sebastian Bergmann</name>
+  <user>sb</user>
+  <email>sb@sebastian-bergmann.de</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-11-22</date>
+ <time>16:03:21</time>
+ <version>
+  <release>1.0.1</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license>BSD License</license>
+ <notes>
+http://github.com/sebastianbergmann/php-invoker/blob/master/README.markdown
+ </notes>
+ <contents>
+  <dir name="/">
+   <file baseinstalldir="/" md5sum="9b32bf0c710bf11fa119f92e776d40a1" name="PHP/Invoker/Autoload.php" role="php">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="/" md5sum="a36a7e523a483acfd04dd072840309bb" name="PHP/Invoker/TimeoutException.php" role="php">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="/" md5sum="83f882c47ed49f810ff2fe0d9df46e63" name="PHP/Invoker.php" role="php">
+    <tasks:replace from="@package_version@" to="version" type="package-info" />
+   </file>
+   <file baseinstalldir="/" md5sum="36dbb446352fd04155806e1cfe20923c" name="ChangeLog.markdown" role="doc" />
+   <file baseinstalldir="/" md5sum="f408cb430bd033c9e020803c18112ef8" name="LICENSE" role="doc" />
+   <file baseinstalldir="/" md5sum="0836e48b9005bb4a7646a5035ec431f2" name="README.markdown" role="doc" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.7</min>
+   </php>
+   <pearinstaller>
+    <min>1.9.4</min>
+   </pearinstaller>
+   <extension>
+    <name>pcntl</name>
+   </extension>
+  </required>
+ </dependencies>
+ <phprelease />
+</package>
